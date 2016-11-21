@@ -19,4 +19,5 @@ typedef struct buffer
 	unsigned int size;
 } buffer;
 void _copy(buffer *);
+int _printf(const char *format, ...);
 #endif
