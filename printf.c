@@ -45,5 +45,3 @@ int _printf(const char *format, ...)
 	va_end(print_stuff);
 	return (chars);
 }
-
-

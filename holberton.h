@@ -3,26 +3,19 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
- * struct buffer - A buffer for our printf
- * @buf: Buffer to write characters
- * @format: The string passed to our printf
- * @bp: the current point in the buffer
- * @fp: the current point in the format
- * @size: the size of our buffer
+ * typedef buffer - A buffer for our printf
+ * @c: Buffer to write characters
+ * @f: The string passed to our printf
+ *
+ *
+ *
  */
-/*typedef struct buffer
-{
-	char *buf;
-	const char *format;
-	int bp;
-	int fp;
-	unsigned int size;
-	} buffer;*/
 
 typedef struct char_functs {
 	char *c;
 	int (*f)();
 } chars_funcs_t;
+
 
 
 
