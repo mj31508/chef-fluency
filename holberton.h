@@ -10,13 +10,24 @@
  * @fp: the current point in the format
  * @size: the size of our buffer
  */
-typedef struct buffer
+/*typedef struct buffer
 {
 	char *buf;
 	const char *format;
 	int bp;
 	int fp;
 	unsigned int size;
-} buffer;
+	} buffer;*/
+
+typedef struct char_functs {
+	char *c;
+	int (*f)();
+} chars_funcs_t;
+
+
+
 void _copy(buffer *);
+
+int _printf(const char *format, ...);
+
 #endif
