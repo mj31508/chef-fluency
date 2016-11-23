@@ -7,12 +7,13 @@
  * @c: char to check as key
  * @f: Pointer to function to call
  */
-typedef struct char_funcs {
+typedef struct char_funcs
+{
 	char *c;
 	int (*f)();
 } char_funcs_t;
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_c();
-int print_s();
+int print_c(void);
+int print_s(void);
 #endif
