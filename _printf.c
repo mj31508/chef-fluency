@@ -1,6 +1,13 @@
 #include <stdarg.h>
 #include "holberton.h"
 
+/**
+ * _printf -Print out a formatted string
+ * @format: Format of the string
+ * Return: number of characters printed
+ *
+ */
+
 int _printf(const char *format, ...)
 {
 
@@ -25,7 +32,7 @@ int _printf(const char *format, ...)
 
 			j = 0;
 
-			while ( j < 4)
+			while (j < 4)
 			{
 				j++;
 
