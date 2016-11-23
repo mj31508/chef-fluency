@@ -2,14 +2,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-<<<<<<< HEAD
-int print_c (va_list args)
-{
-	_putchar(va_arg(args, int));
-	return(1);
-}
-
-=======
 /**
  * print_c - prints a char
  * @args: va_list of all given arguments to _printf
@@ -46,4 +38,3 @@ int print_s(va_list args)
 	}
 	return (chars);
 }
->>>>>>> master
