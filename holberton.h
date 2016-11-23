@@ -14,6 +14,6 @@ typedef struct char_funcs
 } char_funcs_t;
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_c(void);
-int print_s(void);
+int print_c();
+int print_s();
 #endif
