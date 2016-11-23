@@ -37,4 +37,3 @@ int print_s(va_list args)
 		chars++;
 	}
 	return (chars);
-}
