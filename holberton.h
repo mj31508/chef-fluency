@@ -3,15 +3,16 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
- * typedef buffer - A buffer for our printf
- * @c: Buffer to write characters
- * @f: The string passed to our printf
+ * struct char_functs - Struct to find function based on char
+ * @c: char to check as key
+ * @f: pointer to function to call
  *
  *
  *
  */
 
-typedef struct char_functs {
+typedef struct char_functs
+{
 	char *c;
 	int (*f)();
 } chars_funcs_t;
@@ -19,8 +20,9 @@ typedef struct char_functs {
 
 
 
-void _copy(buffer *);
-
+int _putchar(char c);
+int print_c(void);
+int print_s(void);
 int _printf(const char *format, ...);
 
 #endif
