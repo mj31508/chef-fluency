@@ -12,9 +12,9 @@ int _printf(const char *format, ...)
 {
 
 	va_list print_stuff;
-	char_funcs_t = conversions[] = {
+	char_funcs_t conversions[] = {
 		{"c", print_c},
-		{"s", print_s}
+		{"s", print_s},
 	};
 
 	int i;
@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 			{
 				j++;
 
-				if (format[i] == *conversion[j].c)
+				if (format[i] == *conversions[j].c)
 				{
 					chars += conversions[j].f(print_stuff);
 				}
